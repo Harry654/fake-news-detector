@@ -2,8 +2,18 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 model = joblib.load(os.path.join("model", "classifier.pkl"))
 vectorizer = joblib.load(os.path.join("model", "vectorizer.pkl"))
