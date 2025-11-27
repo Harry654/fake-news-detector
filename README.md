@@ -1,17 +1,42 @@
-# 📰 Fake News Detector
+# 📰 Fake News Detector API
 
-A machine learning powered API that detects whether a news article is **Real** or **Fake**.  
-Built with Python, Scikit-Learn, Flask (or FastAPI), and deployed on **Render**.
+AI-powered REST API that classifies news articles as **🟢 Real** or **🔴 Fake** using Natural Language Processing and Machine Learning.
 
 ---
 
 ## 🚀 Features
-- TF-IDF text vectorization
-- Logistic Regression classifier
-- API endpoint for predictions
-- Model training pipeline
-- Ready for deployment on Render
+
+- 🤖 Machine Learning text classification  
+- 🧠 TF-IDF Vectorization + Logistic Regression  
+- 📡 FastAPI endpoint `/predict`  
+- 💾 Loads trained model from `.pkl` files  
+- ☁️ Render deployment-ready  
+- 🔌 Frontend compatible  
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|----------|-------|
+| Language | Python |
+| ML | Scikit-Learn |
+| NLP | TF-IDF Vectorizer |
+| API | FastAPI |
+| Deployment | Render |
+| Serialization | Joblib |
+
+---
+
+## 📦 Installation
+
+```bash
+git clone [https://github.com/Harry654/fake-news-detector.git]
+cd fake-news-detector
+pip install -r requirements.txt
+```
+
+
+## ⭐ Support
+
+If you like this project, please ⭐ the repository!
